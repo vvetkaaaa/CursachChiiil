@@ -1,0 +1,43 @@
+natval func more(natval a, natval b){
+   type natval res;
+   if(a > b){
+      res = a;
+   }else{
+      res = b;
+   }
+   show res;
+}
+line func equals(natval x,natval y){
+   type line res;
+   if(x ! y){
+      res = 'x and y arent equals';
+   }else{
+      res = 'x and y are equals';
+   }
+   show res;
+}
+main
+{
+   type line data = Date();
+   write data;
+   type line time = Time();
+   write time;
+   type natval a = 3;
+   type natval b = 2;
+   type natval x = 5;
+   type natval y = 5;
+   type line eq = 'two num are equals';
+   type line noeq = 'two num arent equals';
+   if(x ~ y){
+        write eq;
+   }else{
+      write noeq;
+   }
+   type natval eight = 8x16;
+   write eight;
+   type natval resmore = more(a, b);
+   type line output = equals(x, y);
+   write x;
+   write resmore;
+   write output;
+}{}
